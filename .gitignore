@@ -1,0 +1,6 @@
+"# Archivos compilados" 
+"*.exe" 
+"*.o" 
+"buscador" 
+"# Archivos temporales" 
+"*.tmp" 
