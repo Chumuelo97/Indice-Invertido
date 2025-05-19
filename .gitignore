@@ -1,6 +1,10 @@
-"# Archivos compilados" 
-"*.exe" 
-"*.o" 
-"buscador" 
-"# Archivos temporales" 
-"*.tmp" 
+# Archivos compilados
+*.exe
+*.o"
+buscador"
+# Archivos temporales
+*.tmp"
+
+.vscode
+.vscode/c_cpp_properties.json
+.vscode/settings.json

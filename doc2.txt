@@ -1,0 +1,1 @@
+Los modelos de simulación permiten representar el comportamiento de un sistema real
