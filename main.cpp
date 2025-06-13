@@ -25,14 +25,16 @@ void cargarDesdeArchivos(const std::vector<std::string> &archivos, IndiceInverti
     }
 }
 
+
 void cargarDesdeGov2(const std::string &archivoPath, IndiceInvertido &indice, StopWord &stopwords)
 {
     std::ifstream archivo(archivoPath);
     std::string linea;
     int docID = 1;
     ProcesadorDocumentos proc;
+    int contadorLineas = 0; // Contador para limitar a 1000 líneas
 
-    while (std::getline(archivo, linea))
+    while (std::getline(archivo, linea) && contadorLineas < 3000) // Limitar a 3000 líneas por el tamaño del archivo
     {
         size_t pos = linea.find_last_of("||");
         if (pos != std::string::npos && pos + 2 < linea.size())
@@ -41,7 +43,10 @@ void cargarDesdeGov2(const std::string &archivoPath, IndiceInvertido &indice, St
             proc.procesar(contenido, docID, indice, stopwords);
             ++docID;
         }
+        ++contadorLineas; // Incrementar el contador por cada línea leída
     }
+
+    std::cout << "Se procesaron " << contadorLineas << " líneas del archivo." << std::endl;
 }
 
 int main()
