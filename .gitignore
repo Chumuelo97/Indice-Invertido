@@ -1,12 +1,13 @@
 # Archivos compilados
 *.exe
-*.o"
-buscador"
+*.o
+buscador
+
 # Archivos temporales
-*.tmp"
+*.tmp
 
-.vscode
-.vscode/c_cpp_properties.json
-.vscode/settings.json
+# Configuración de VSCode
+.vscode/
 
-*.dat
+# Archivos de datos grandes
+gov2_pages.dat

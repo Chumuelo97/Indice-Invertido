@@ -7,7 +7,6 @@
 
 bool letra2Ascii(unsigned char c)
 {
-    //return std::isalpha(c) || (c >= 0xC0 && c < 0xFF) || c == 0xF1 || c == 0xD1;
     int codigo;
     unsigned char letra = c;
 

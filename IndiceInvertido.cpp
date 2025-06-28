@@ -41,27 +41,7 @@ NodoPosteo *IndiceInvertido::obtenerLista(const std::string &palabra)
     return nullptr;
 }
 
-/*NodoPosteo *IndiceInvertido::obtenerLista(const std::string &palabra)
-{
-    // Depuración: Mostrar palabra que estamos buscando
-    std::cout << "DEBUG: Buscando en índice: '" << palabra << "'" << std::endl;
 
-    // Mostrar palabras en el índice (ajusta el nombre de la variable)
-    std::cout << "DEBUG: Palabras en índice: ";
-    for (const auto &par : vocabulario) // Cambiar "IndiceInvertido" por "vocabulario"
-    {
-        std::cout << "'" << par.first << "' ";
-    }
-    std::cout << std::endl;
-
-    // Búsqueda (ajusta el nombre de la variable)
-    auto it = vocabulario.find(palabra); // Cambiar "indiceInvertido" por "vocabulario"
-    if (it == vocabulario.end())         // Cambiar "indiceInvertido" por "vocabulario"
-    {
-        return nullptr;
-    }
-    return it->second;
-}*/
 
 void IndiceInvertido::mostrarIndice()
 {

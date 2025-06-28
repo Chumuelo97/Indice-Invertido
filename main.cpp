@@ -49,8 +49,17 @@ void cargarDesdeGov2(const std::string &archivoPath, IndiceInvertido &indice, St
     std::cout << "Se procesaron " << contadorLineas << " líneas del archivo." << std::endl;
 }
 
-int main()
+int main(int argc, char *argv[])
 {
+    int modo = 1;
+
+    if (argc == 1)
+    {
+        modo = std::atoi(argv[1]);
+    }else if (argc == 2)
+    {
+        modo = std::atoi(argv[2]);
+    }
     
     IndiceInvertido indice;
     StopWord stop;
@@ -62,7 +71,7 @@ int main()
     std::cout << "2. Archivo gov2_pages.dat\n> ";
     std::getline(std::cin, opcion);
 
-    // hacer una logica para stopwords en inglés y en español NO OLVIDAR
+    // hacer una logica para stopwords en inglés y en español NO OLVIDAR (listo)
     stop.cargarDesdeArchivo("stopwords_english.dat.txt");
     stop.cargarDesdeArchivo("stopwords_espaniol.dat.txt");
 
