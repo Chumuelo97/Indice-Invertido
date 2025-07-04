@@ -11,3 +11,8 @@ buscador
 
 # Archivos de datos grandes
 gov2_pages.dat
+
+#archios txt
+GrafoCoRelevancia.txt
+PageRank_Resultados.txt
+ResultadosConsultas.txt

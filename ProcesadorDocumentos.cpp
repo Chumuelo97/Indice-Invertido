@@ -7,12 +7,7 @@
 
 bool letra2Ascii(unsigned char c)
 {
-    int codigo;
-    unsigned char letra = c;
-
-    codigo = letra;
-
-    return codigo;
+    return isalnum(c);
 }
 
 static std::string limpiarPalabra(const std::string &palabra)
