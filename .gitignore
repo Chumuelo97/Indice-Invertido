@@ -16,3 +16,6 @@ gov2_pages.dat
 GrafoCoRelevancia.txt
 PageRank_Resultados.txt
 ResultadosConsultas.txt
+#archivos varios 
+main.exe
+visualizar_grafo.py
