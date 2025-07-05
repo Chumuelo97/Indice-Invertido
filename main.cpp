@@ -215,7 +215,7 @@ int main(int argc, char *argv[])
         std::cout << "Tiempo de construcción del grafo: " << tiempo_grafo.count() << " segundos\n";
 
         //Métricas del grafo
-        std::cout << "Métricas del grafo:\n";
+        std::cout << "Metricas del grafo:\n";
         std::cout << "Nodos: " << grafoCoRelevancia.getNumeroNodos() << "\n";
         std::cout << "Aristas: " << grafoCoRelevancia.getNumeroAristas() << "\n";
 
